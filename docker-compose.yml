@@ -14,8 +14,8 @@ services:
       - LETSENCRYPT_HOST=fitcontrolgym.iados.mx
       - LETSENCRYPT_EMAIL=iados@outlook.es
     networks:
-      - nginx-proxy
+      - web_network
 
 networks:
-  nginx-proxy:
+  web_network:
     external: true
