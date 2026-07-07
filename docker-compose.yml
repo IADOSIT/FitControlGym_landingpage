@@ -1,11 +1,9 @@
 name: fitcontrolgym-landing
 
 services:
-  web:
-    image: nginx:alpine
+  fitcontrolgym-landing:
+    build: .
     restart: unless-stopped
-    volumes:
-      - ./:/usr/share/nginx/html:ro
     expose:
       - "80"
     environment:
