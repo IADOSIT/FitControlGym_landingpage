@@ -1,5 +1,7 @@
+name: fitcontrolgym-landing
+
 services:
-  fitcontrolgym-landing:
+  web:
     image: nginx:alpine
     restart: unless-stopped
     volumes:
